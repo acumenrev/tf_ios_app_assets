@@ -13,10 +13,12 @@
 strings:
     inputs:
         - Resources/lang-en.strings
+        - Resources/lang-vn.strings
     outputs:
         - templateName: structured-swift5
           params:
             publicAccess: true
+            enumName: Localization
           output: Generated/Strings_LangEn_Generated.swift
 
 
