@@ -39,7 +39,8 @@ public struct TFAssets {
     
     public func getSampleTextFieldFromResources() -> Any? {
         let dataUrl = Bundle.module.path(forResource: "test", ofType: "txt")
-        
+        let arr = Bundle.module.paths(forResourcesOfType: "txt", inDirectory: nil)
+        print("All resources: \(arr)")
         guard let url = dataUrl else {
             print("no data url")
             
