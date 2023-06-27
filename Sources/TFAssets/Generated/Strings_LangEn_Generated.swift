@@ -15,22 +15,14 @@ public enum Localization {
     ///   
     /// 
     ///   Created by AL-TVO163 on 27/06/2023.
-    public static let hello = Localization.tr("lang-en", "hello", fallback: "sample hello")
-    /// new worlds snè
-    public static let newWorld = Localization.tr("lang-en", "new world", fallback: "new worlds snè")
-    /// nice view in the city
-    public static let niceView = Localization.tr("lang-en", "nice_view", fallback: "nice view in the city")
+    public static let helloWorld = Localization.tr("lang-en", "hello_world", fallback: "Hello World")
   }
   public enum LangVn {
     /// Localizable.strings
     ///   
     /// 
     ///   Created by AL-TVO163 on 27/06/2023.
-    public static let hello = Localization.tr("lang-vn", "hello", fallback: "tiếng việt")
-    /// nè
-    public static let newWorld = Localization.tr("lang-vn", "new world", fallback: "nè")
-    /// việt nam
-    public static let niceView = Localization.tr("lang-vn", "nice_view", fallback: "việt nam")
+    public static let helloWorld = Localization.tr("lang-vn", "hello_world", fallback: "Xin chào")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

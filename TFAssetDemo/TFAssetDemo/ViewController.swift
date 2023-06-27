@@ -11,6 +11,7 @@ import TFAssets
 class ViewController: UIViewController {
 
     @IBOutlet private weak var imgViewCenter : UIImageView!
+    @IBOutlet private weak var lblCenter : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +21,13 @@ class ViewController: UIViewController {
 
     func loadUI() {
         let assets = TFAssets()
-        imgViewCenter.image = UIImage.robot
         _ = assets.getJsonFileFromAsset()
         _ = assets.getSampleTextFieldFromResources()
         _ = assets.getTextFileFromAsset()
+        
+        lblCenter.text = Localization.LangEn.helloWorld
+        
+        imgViewCenter.image = Asset.robot03.image
     }
 
 }
